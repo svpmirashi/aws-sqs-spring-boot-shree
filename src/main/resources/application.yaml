@@ -1,0 +1,18 @@
+server:
+  port: 8082
+
+aws:
+  sqs:
+    region: "AP-SOUTH-1"
+    queueName: "Message.fifo"
+    maxNumberOfMessages: 3
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+    jmx:
+      exposure:
+        include: "*"
